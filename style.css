@@ -124,12 +124,11 @@
   width: 85%;
   opacity: 0;
   transition: 0.5s ease;
-  background-color: #ed2793;
+  background-color: #ed279366;
 }
 
 .movie-container:hover .movie-overlay {
   opacity: 1;
-  background-color: #ed279366;
 }
 
 .movie-types {
@@ -146,10 +145,22 @@
   filter: brightness(0) invert(1);
 }
 
-.movie-title {
+.movie-detail {
+  border: none;
+  border-radius: 5px;
+  width: 90%;
   position: absolute;
   bottom: 20px;
-  left: 10%;
+  left: 5%;
+  background-color: white;
+  color: black;
+  font-size: 18px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.movie-detail:hover {
+  background-color: black;
   color: white;
 }
 
@@ -160,4 +171,13 @@
   color: white;
   font-size: 18px;
   font-weight: bold;
+}
+
+.movie-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 5px;
 }
