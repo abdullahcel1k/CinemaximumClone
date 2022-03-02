@@ -121,16 +121,18 @@
             <option value="2">İstanbul</option>
             <option value="3">Sivas</option>
           </select>
-          <div>
+          <div class="choice-format mt-5">
             <span class="filter-head">Format Seç</span><br />
             <small>Birden fazla seçim yapabilirsiniz</small>
             <div class="d-flex flex-row justify-content-between mt-2">
-              <div class="format-type active-format">2D</div>
+              <div class="format-type active-format">
+                <div class="mt-03">2D</div>
+              </div>
               <div class="format-type">3D</div>
             </div>
           </div>
           <select
-            class="form-select form-select-lg mb-3 movie-filter"
+            class="form-select form-select-lg mb-3 movie-filter mt-5"
             aria-label=".form-select-lg example"
           >
             <option selected disabled>Dil Seç</option>
@@ -139,7 +141,7 @@
             <option value="3">Altyazı</option>
           </select>
           <select
-            class="form-select form-select-lg mb-3 movie-filter"
+            class="form-select form-select-lg mb-3 mt-5 movie-filter"
             aria-label=".form-select-lg example"
           >
             <option selected disabled>Tür Seç</option>
@@ -148,6 +150,10 @@
             <option value="3">Biyografi</option>
             <option value="3">Macera</option>
           </select>
+          <button class="btn btn-dark btn-lg w-100 btn-filter mt-5">
+            Filtrele
+          </button>
+          <div class="btn-clear-filter mt-3">Filtreyi Temizle</div>
         </div>
         <div class="col-9">
           <div class="row">

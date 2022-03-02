@@ -203,19 +203,52 @@
   text-align: center;
   font-size: 16px;
   padding: 5px 0;
+  cursor: pointer;
 }
 
+.choice-format {
+  border-bottom: 2px solid black;
+  padding: 0 1rem 1rem 1rem;
+}
 .active-format {
   border-color: #ed2793;
   position: relative;
+  padding: 0;
 }
 
 .active-format::before {
   content: "";
   position: absolute;
-  width: 20px;
-  height: 20px;
-  right: 5px;
+  width: 35px;
+  height: 35px;
+  right: 0;
   background-image: url("./assets/images/check.png");
   background-color: #ed2793;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.mt-03 {
+  margin-top: 0.3rem;
+}
+
+.btn-filter:focus {
+  border: none;
+  box-shadow: none;
+}
+
+.btn-filter:active {
+  border: none;
+  box-shadow: none;
+}
+
+.btn-filter:hover {
+  background-color: #ed2793;
+  border: 1px solid #ed2793;
+}
+
+.btn-clear-filter {
+  text-decoration: underline;
+  text-align: center;
+  cursor: pointer;
 }
