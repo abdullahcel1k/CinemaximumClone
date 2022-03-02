@@ -1,0 +1,163 @@
+.navbar {
+  border-bottom: 1px solid #dedede;
+}
+
+.right-line {
+  border-right: 1px solid #dedede;
+  padding-right: 0.5rem;
+}
+
+.no-arrow::after {
+  content: none !important;
+}
+
+.left-line {
+  border-left: 1px solid #dedede;
+  padding-left: 0.5rem;
+}
+
+.nav-item {
+  padding-left: 0.5rem;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  font-size: 18px;
+}
+
+.nav-link:hover {
+  font-weight: bold;
+}
+
+.auth-btn {
+  border: none;
+  border-radius: 8px;
+  margin-right: 1rem;
+  box-shadow: 0px 10px 15px #dedede;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.btn-sign-up {
+  background-color: #ed2793;
+  color: white;
+}
+
+.btn-sign-in {
+  background-color: white;
+  color: #ed2793;
+}
+
+.tabs {
+  display: flex;
+  margin-top: 3rem;
+  border-bottom: 1px solid #dedede;
+  padding-bottom: 3rem;
+}
+.tab-title {
+  font-size: 24px;
+  color: #dedede;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.active-tab {
+  color: black;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #ed2793;
+  position: relative;
+}
+
+.active-tab:before {
+  content: "";
+  position: absolute;
+  left: 40%;
+  bottom: -12px;
+  border-style: solid;
+  border-width: 12px 12px 0px 12px;
+  border-color: #ed2793 transparent #ed2793 transparent;
+}
+
+.sort-param {
+  font-size: 18px;
+  color: #dedede;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.active-sort {
+  color: black;
+  border-bottom: 2px solid #ed2793;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.active-sort:before {
+  content: "";
+  position: absolute;
+  left: 40%;
+  bottom: -10px;
+  border-style: solid;
+  border-width: 10px 10px 0px 10px;
+  border-color: #ed2793 transparent #ed2793 transparent;
+}
+
+.movie-container {
+  position: relative;
+  padding-left: 5%;
+  cursor: pointer;
+}
+
+.movie-overlay {
+  position: absolute;
+  margin-left: 5%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 85%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #ed2793;
+}
+
+.movie-container:hover .movie-overlay {
+  opacity: 1;
+  background-color: #ed279366;
+}
+
+.movie-types {
+  padding-left: 10px;
+  list-style: none;
+}
+
+.movie-types li {
+  margin-bottom: 5px;
+}
+
+.movie-types img {
+  -webkit-filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
+}
+
+.movie-title {
+  position: absolute;
+  bottom: 20px;
+  left: 10%;
+  color: white;
+}
+
+.movie-score {
+  position: absolute;
+  bottom: 50%;
+  left: 40%;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}

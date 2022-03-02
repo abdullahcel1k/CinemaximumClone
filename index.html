@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cinemaximum Clone</title>
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/fontawesome/css/all.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light p-0">
+      <div class="container-fluid d-flex justify-content-center">
+        <a class="navbar-brand right-line pe-5" href="#">
+          <img
+            src="./assets/images/cinemaximum_logo.svg"
+            alt=""
+            width="150"
+            height="50"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0 right-line px-4 m-0 ps-0">
+            <li class="nav-item dropdown right-line">
+              <a
+                class="nav-link dropdown-toggle no-arrow"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                ><i class="fa-solid fa-bars"></i>
+                Menü
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Filmler</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sinemalar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <img
+                  src="./assets/images/gold_class_salon_sizin-black-logo.png"
+                  height="50"
+                />
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><img src="./assets/images/header_cgvmoviepass.png" height="50"
+              /></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><i class="fa-solid fa-magnifying-glass"></i
+              ></a>
+            </li>
+          </ul>
+          <div class="d-flex w-100 justify-content-center">
+            <button class="auth-btn btn-sign-up" type="submit">Üye Ol</button>
+            <button class="auth-btn btn-sign-in" type="submit">Giriş</button>
+            <a href="#">
+              <img src="./assets/images/cgv_icon.svg" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main class="container-fluid px-5">
+      <section class="tabs">
+        <h3 class="tab-title active-tab" onclick="activateTab(this)">
+          Vizyonda
+        </h3>
+        <h3 class="tab-title" onclick="activateTab(this)">Yakında</h3>
+        <h4
+          class="sort-param ms-auto active-sort"
+          onclick="changeSorting(this)"
+        >
+          Vizyon Tarihi
+        </h4>
+        <h4 class="sort-param" onclick="changeSorting(this)">Puan</h4>
+      </section>
+      <section class="row movies-container mt-5">
+        <div class="col-3 bg-danger min-vh-100"></div>
+        <div class="col-9">
+          <div class="row">
+            <div class="col-4">
+              <div class="movie-container">
+                <img src="./assets/images/run_gercek.jpg" width="90%" />
+                <div class="movie-overlay">
+                  <ul class="movie-types">
+                    <li><img src="./assets/images/popcorn.png" /></li>
+                    <li><img src="./assets/images/movie-theater.png" /></li>
+                  </ul>
+                  <div class="movie-score">
+                    4<i class="fa-solid fa-star ms-1"></i>
+                  </div>
+                  <h3 class="movie-title">Gizli Gerçek</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="movie-container">
+                <img src="./assets/images/run_gercek.jpg" width="90%" />
+                <div class="movie-overlay">
+                  <div class="movie-score">
+                    4.6<i class="fa-solid fa-star ms-1"></i>
+                  </div>
+                  <h3 class="movie-title">Gizli Gerçek</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="movie-container">
+                <img src="./assets/images/run_gercek.jpg" width="90%" />
+                <div class="movie-overlay">
+                  <ul class="movie-types">
+                    <li><img src="./assets/images/popcorn.png" /></li>
+                    <li><img src="./assets/images/movie-theater.png" /></li>
+                  </ul>
+                  <div class="movie-score">
+                    4<i class="fa-solid fa-star ms-1"></i>
+                  </div>
+                  <h3 class="movie-title">Gizli Gerçek</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+      const activateTab = (e) => {
+        e.classList.forEach((element) => {
+          if (element != "active-tab") {
+            const hasItems = document.getElementsByClassName("active-tab");
+            hasItems[0].classList.remove("active-tab");
+            e.classList.add("active-tab");
+          }
+        });
+      };
+
+      const changeSorting = (e) => {
+        e.classList.forEach((element) => {
+          if (element != "active-sort") {
+            const hasItems = document.getElementsByClassName("active-sort");
+            hasItems[0].classList.remove("active-sort");
+            e.classList.add("active-sort");
+          }
+        });
+      };
+    </script>
+  </body>
+</html>
