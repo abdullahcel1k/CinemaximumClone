@@ -111,10 +111,47 @@
         <h4 class="sort-param" onclick="changeSorting(this)">Puan</h4>
       </section>
       <section class="row movies-container mt-5">
-        <div class="col-3 bg-danger min-vh-100"></div>
+        <div class="col-3">
+          <select
+            class="form-select form-select-lg mb-3 movie-filter"
+            aria-label=".form-select-lg example"
+          >
+            <option selected disabled>Sinema Seç</option>
+            <option value="1">Ankara</option>
+            <option value="2">İstanbul</option>
+            <option value="3">Sivas</option>
+          </select>
+          <div>
+            <span class="filter-head">Format Seç</span><br />
+            <small>Birden fazla seçim yapabilirsiniz</small>
+            <div class="d-flex flex-row justify-content-between mt-2">
+              <div class="format-type active-format">2D</div>
+              <div class="format-type">3D</div>
+            </div>
+          </div>
+          <select
+            class="form-select form-select-lg mb-3 movie-filter"
+            aria-label=".form-select-lg example"
+          >
+            <option selected disabled>Dil Seç</option>
+            <option value="1">Dublaj</option>
+            <option value="2">Orjinal</option>
+            <option value="3">Altyazı</option>
+          </select>
+          <select
+            class="form-select form-select-lg mb-3 movie-filter"
+            aria-label=".form-select-lg example"
+          >
+            <option selected disabled>Tür Seç</option>
+            <option value="1">Aile</option>
+            <option value="2">Aksiyon</option>
+            <option value="3">Biyografi</option>
+            <option value="3">Macera</option>
+          </select>
+        </div>
         <div class="col-9">
           <div class="row">
-            <div class="col-4">
+            <div class="col-4 mb-5">
               <div class="movie-container">
                 <img src="./assets/images/run_gercek.jpg" width="90%" />
                 <div class="movie-overlay">
@@ -130,7 +167,7 @@
               </div>
               <span class="movie-title">Gizli Gerçek</span>
             </div>
-            <div class="col-4">
+            <div class="col-4 mb-5">
               <div class="movie-container">
                 <img src="./assets/images/run_gercek.jpg" width="90%" />
                 <div class="movie-overlay">
@@ -146,7 +183,7 @@
               </div>
               <span class="movie-title">Gizli Gerçek</span>
             </div>
-            <div class="col-4">
+            <div class="col-4 mb-5">
               <div class="movie-container">
                 <img src="./assets/images/run_gercek.jpg" width="90%" />
                 <div class="movie-overlay">
@@ -162,7 +199,7 @@
               </div>
               <span class="movie-title">Gizli Gerçek</span>
             </div>
-            <div class="col-4">
+            <div class="col-4 mb-5">
               <div class="movie-container">
                 <img src="./assets/images/run_gercek.jpg" width="90%" />
                 <div class="movie-overlay">
@@ -178,7 +215,7 @@
               </div>
               <span class="movie-title">Gizli Gerçek</span>
             </div>
-            <div class="col-4">
+            <div class="col-4 mb-5">
               <div class="movie-container">
                 <img src="./assets/images/run_gercek.jpg" width="90%" />
                 <div class="movie-overlay">
@@ -194,7 +231,7 @@
               </div>
               <span class="movie-title">Gizli Gerçek</span>
             </div>
-            <div class="col-4">
+            <div class="col-4 mb-5">
               <div class="movie-container">
                 <img src="./assets/images/run_gercek.jpg" width="90%" />
                 <div class="movie-overlay">
@@ -210,7 +247,7 @@
               </div>
               <span class="movie-title">Gizli Gerçek</span>
             </div>
-            <div class="col-4">
+            <div class="col-4 mb-5">
               <div class="movie-container">
                 <img src="./assets/images/run_gercek.jpg" width="90%" />
                 <div class="movie-overlay">
@@ -222,23 +259,7 @@
               </div>
               <span class="movie-title">Gizli Gerçek</span>
             </div>
-            <div class="col-4">
-              <div class="movie-container">
-                <img src="./assets/images/run_gercek.jpg" width="90%" />
-                <div class="movie-overlay">
-                  <ul class="movie-types">
-                    <li><img src="./assets/images/popcorn.png" /></li>
-                    <li><img src="./assets/images/movie-theater.png" /></li>
-                  </ul>
-                  <div class="movie-score">
-                    4<i class="fa-solid fa-star ms-1"></i>
-                  </div>
-                  <button class="movie-detail">İncele</button>
-                </div>
-              </div>
-              <span class="movie-title">Gizli Gerçek</span>
-            </div>
-            <div class="col-4">
+            <div class="col-4 mb-5">
               <div class="movie-container">
                 <img src="./assets/images/run_gercek.jpg" width="90%" />
                 <div class="movie-overlay">
@@ -254,19 +275,7 @@
               </div>
               <span class="movie-title">Gizli Gerçek</span>
             </div>
-            <div class="col-4">
-              <div class="movie-container">
-                <img src="./assets/images/run_gercek.jpg" width="90%" />
-                <div class="movie-overlay">
-                  <div class="movie-score">
-                    4<i class="fa-solid fa-star ms-1"></i>
-                  </div>
-                  <button class="movie-detail">İncele</button>
-                </div>
-              </div>
-              <span class="movie-title">Gizli Gerçek</span>
-            </div>
-            <div class="col-4">
+            <div class="col-4 mb-5">
               <div class="movie-container">
                 <img src="./assets/images/run_gercek.jpg" width="90%" />
                 <div class="movie-overlay">
@@ -282,7 +291,19 @@
               </div>
               <span class="movie-title">Gizli Gerçek</span>
             </div>
-            <div class="col-4">
+            <div class="col-4 mb-5">
+              <div class="movie-container">
+                <img src="./assets/images/run_gercek.jpg" width="90%" />
+                <div class="movie-overlay">
+                  <div class="movie-score">
+                    4<i class="fa-solid fa-star ms-1"></i>
+                  </div>
+                  <button class="movie-detail">İncele</button>
+                </div>
+              </div>
+              <span class="movie-title">Gizli Gerçek</span>
+            </div>
+            <div class="col-4 mb-5">
               <div class="movie-container">
                 <img src="./assets/images/run_gercek.jpg" width="90%" />
                 <div class="movie-overlay">
@@ -298,7 +319,23 @@
               </div>
               <span class="movie-title">Gizli Gerçek</span>
             </div>
-            <div class="col-4">
+            <div class="col-4 mb-5">
+              <div class="movie-container">
+                <img src="./assets/images/run_gercek.jpg" width="90%" />
+                <div class="movie-overlay">
+                  <ul class="movie-types">
+                    <li><img src="./assets/images/popcorn.png" /></li>
+                    <li><img src="./assets/images/movie-theater.png" /></li>
+                  </ul>
+                  <div class="movie-score">
+                    4<i class="fa-solid fa-star ms-1"></i>
+                  </div>
+                  <button class="movie-detail">İncele</button>
+                </div>
+              </div>
+              <span class="movie-title">Gizli Gerçek</span>
+            </div>
+            <div class="col-4 mb-5">
               <div class="movie-container">
                 <img src="./assets/images/run_gercek.jpg" width="90%" />
                 <div class="movie-overlay">

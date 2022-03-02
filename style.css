@@ -181,3 +181,41 @@
   font-weight: 400;
   margin-top: 5px;
 }
+
+.movie-filter {
+  border: none;
+  border-radius: 0;
+  border-bottom: 2px solid black;
+}
+
+.movie-filter:focus {
+  box-shadow: none;
+  border-color: black;
+}
+
+.filter-head {
+  font-size: 20px;
+  font-size: 400;
+}
+.format-type {
+  border: 1px solid #dedede;
+  width: 45%;
+  text-align: center;
+  font-size: 16px;
+  padding: 5px 0;
+}
+
+.active-format {
+  border-color: #ed2793;
+  position: relative;
+}
+
+.active-format::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 5px;
+  background-image: url("./assets/images/check.png");
+  background-color: #ed2793;
+}
