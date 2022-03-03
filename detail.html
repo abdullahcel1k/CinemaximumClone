@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cinemaximum Clone</title>
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/fontawesome/css/all.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./detail.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light p-0">
+      <div class="container-fluid d-flex justify-content-center">
+        <a class="navbar-brand right-line pe-5" href="#">
+          <img
+            src="./assets/images/cinemaximum_logo.svg"
+            alt=""
+            width="150"
+            height="50"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0 right-line px-4 m-0 ps-0">
+            <li class="nav-item dropdown right-line">
+              <a
+                class="nav-link dropdown-toggle no-arrow"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                ><i class="fa-solid fa-bars"></i>
+                Menü
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Filmler</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sinemalar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <img
+                  src="./assets/images/gold_class_salon_sizin-black-logo.png"
+                  height="50"
+                />
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><img src="./assets/images/header_cgvmoviepass.png" height="50"
+              /></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><i class="fa-solid fa-magnifying-glass"></i
+              ></a>
+            </li>
+          </ul>
+          <div class="d-flex w-100 justify-content-center">
+            <button class="auth-btn btn-sign-up" type="submit">Üye Ol</button>
+            <button class="auth-btn btn-sign-in" type="submit">Giriş</button>
+            <a href="#">
+              <img src="./assets/images/cgv_icon.svg" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main class="container-fluid p-0">
+      <div class="movie-detail-background"></div>
+      <div class="row movie-detail-container p-0">
+        <div class="col-3 offset-1">
+          <img
+            class="movie-detail-img mt-5"
+            src="./assets/images/malazgirt-1071.png"
+          />
+        </div>
+        <div class="col-8 px-5">
+          <div class="movie-detail-header">
+            <span
+              ><i class="fa-solid fa-comment movie-detail-header-icon"></i>
+              Yorumları Oku</span
+            >
+            <span
+              ><i class="fa-solid fa-star movie-detail-header-icon"></i>
+              Puanla</span
+            >
+            <span
+              ><i class="fa-solid fa-heart movie-detail-header-icon"></i>
+              İzlemek İstiyorum</span
+            >
+            <span class="share-section">Paylaş</span>
+            <span
+              ><i
+                class="fa-brands fa-facebook-square movie-detail-header-icon"
+              ></i
+            ></span>
+            <span
+              ><i class="fa-brands fa-twitter movie-detail-header-icon"></i
+            ></span>
+          </div>
+          <div class="movie-detail-info">
+            <h1 class="movie-detail-title">Malazgirt 1071</h1>
+            <span class="movie-detail-rate"
+              ><i class="fa-solid fa-star me-2"></i>6.4</span
+            >
+          </div>
+          <div class="movie-warnings">
+            <i class="fa-solid fa-circle-minus"></i>
+            <i class="fa-solid fa-bahai"></i>
+          </div>
+          <ul class="movie-credit">
+            <li><strong>Yönetmen :</strong> Kalyoncu, Özgür Bakar</li>
+            <li>
+              <strong>Oyuncular :</strong> Caner Kurtaran, Vildan Atasever,
+              Haluk Piyes, Cengiz Coşkun
+            </li>
+            <li><strong>Formatlar :</strong> 2D</li>
+          </ul>
+          <div class="movie-detail-button-group">
+            <button class="movie-detail-button">Bilet Al</button>
+            <button class="movie-detail-button">Fragman</button>
+            <button class="movie-detail-button">Yorum Yap</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer bg-light pb-5">
+      <div class="social-links">
+        <span>Bizi Takip Et</span>
+        <div class="mt-3">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#"><i class="fa-brands fa-foursquare"></i></a>
+        </div>
+      </div>
+
+      <div class="row mt-5 mx-0">
+        <div class="col-3">
+          <ul class="useful-links">
+            <li><a href="#" class="useful-link-a">Vizyonda</a></li>
+            <li><a href="#" class="useful-link-a">Yakında</a></li>
+            <li><a href="#" class="useful-link-a">Sinemalar</a></li>
+            <li><a href="#" class="useful-link-a">CGV Arthouse</a></li>
+            <li><a href="#" class="useful-link-a">CGV Cinema Club</a></li>
+            <li><a href="#" class="useful-link-a">Ayrıcalıklı Salonlar</a></li>
+            <li><a href="#" class="useful-link-a">Kampanyalar</a></li>
+            <li>
+              <a href="#" class="useful-link-a">Özel Etkinlik Talepleri</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-2">
+          <ul class="useful-links">
+            <li><a href="#" class="useful-link-a">E-Bilet</a></li>
+            <li><a href="#" class="useful-link-a">İade İşlemleri</a></li>
+            <li>
+              <a href="#" class="useful-link-a">MoviePass İade İşlemleri</a>
+            </li>
+            <li><a href="#" class="useful-link-a">İnsan Kaynakları</a></li>
+            <li><a href="#" class="useful-link-a">Sıkça Sorulan Sorular</a></li>
+            <li><a href="#" class="useful-link-a">İşlem Rehberi</a></li>
+            <li><a href="#" class="useful-link-a">Hakkımızda</a></li>
+            <li><a href="#" class="useful-link-a">Yorum ve Öneriler</a></li>
+          </ul>
+        </div>
+        <div class="col-3">
+          <ul class="useful-links">
+            <li>
+              <a href="#" class="useful-link-a">KVK Aydınlatma Bildirimi</a>
+            </li>
+            <li>
+              <a href="#" class="useful-link-a">Kamera Sistemleri Bildirimi</a>
+            </li>
+            <li>
+              <a href="#" class="useful-link-a" target="_blank"
+                >KVKK Basvuru Formu</a
+              >
+            </li>
+            <li>
+              <a href="#" class="useful-link-a">KVK Politikasi</a>
+            </li>
+            <li><a href="#" class="useful-link-a">İletişim</a></li>
+          </ul>
+        </div>
+        <div class="col-4 text-end">
+          <a href="#" class="useful-link-a">Gizlilik</a>
+          <a href="#" class="useful-link-a">Kullanım Koşulları</a>
+          <br />
+          <a href="#" class="useful-link-a">Mesafeli Bilet Satış Sözleşmesi</a>
+          <div class="copyright">
+            Reklam vermek için:
+            <a
+              href="http://www.marsmedia.com.tr"
+              class="useful-link-a"
+              target="_blank"
+              >www.marsmedia.com.tr</a
+            ><br />
+            © Copyright <span id="copyright-date"></span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+      const dateSelector = new Date();
+      document.getElementById("copyright-date").innerHTML =
+        dateSelector.getFullYear();
+    </script>
+  </body>
+</html>

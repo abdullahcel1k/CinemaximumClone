@@ -1,0 +1,113 @@
+.movie-detail-background {
+  position: absolute;
+  background-image: url("./assets/images/malazgirt-1071.png");
+  width: 100%;
+  height: 450px;
+  z-index: 0;
+  opacity: 0.8;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  filter: blur(10px);
+  margin: 0;
+  padding: 0;
+}
+
+.movie-detail-container {
+  position: relative;
+  background-image: linear-gradient(#ed279377, #ed279333);
+  height: 450px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  color: white;
+}
+
+.movie-detail-img {
+  height: 365px;
+  max-height: 365px;
+}
+
+.movie-detail-header {
+  display: flex;
+  justify-content: end;
+  margin-top: 1rem;
+}
+
+.movie-detail-header span:last-child {
+  margin: 0;
+  padding: 0;
+}
+
+.movie-detail-header span {
+  cursor: pointer;
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+.movie-detail-header-icon {
+  border: 1px solid;
+  padding: 0.3rem;
+  font-size: 10px;
+  border-radius: 5px;
+}
+
+.share-section {
+  border-left: 1px solid white;
+  padding-left: 1rem;
+}
+
+.movie-detail-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.movie-detail-title {
+  font-size: 32px;
+  font-weight: 200;
+  line-height: 100%;
+}
+
+.movie-detail-rate {
+  font-size: 20px;
+}
+
+.movie-warnings {
+  margin-top: 1rem;
+  font-size: 24px;
+}
+
+.movie-warnings i {
+  margin-left: 5px;
+}
+
+.movie-credit {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 1rem;
+}
+
+.movie-credit li {
+  margin-bottom: 3px;
+}
+
+.movie-detail-button-group {
+  position: absolute;
+  bottom: 35px;
+}
+
+.movie-detail-button {
+  background-color: transparent;
+  border-radius: 5px;
+  border: 1px solid white;
+  width: 150px;
+  height: 40px;
+  margin-right: 1rem;
+  color: white;
+}
+
+.movie-detail-button:hover {
+  background-color: white;
+  color: black;
+}
