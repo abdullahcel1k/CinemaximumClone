@@ -357,6 +357,84 @@
         </div>
       </section>
     </main>
+    <footer class="footer bg-light pb-5">
+      <div class="social-links">
+        <span>Bizi Takip Et</span>
+        <div class="mt-3">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#"><i class="fa-brands fa-foursquare"></i></a>
+        </div>
+      </div>
+
+      <div class="row mt-5 mx-0">
+        <div class="col-3">
+          <ul class="useful-links">
+            <li><a href="#" class="useful-link-a">Vizyonda</a></li>
+            <li><a href="#" class="useful-link-a">Yakında</a></li>
+            <li><a href="#" class="useful-link-a">Sinemalar</a></li>
+            <li><a href="#" class="useful-link-a">CGV Arthouse</a></li>
+            <li><a href="#" class="useful-link-a">CGV Cinema Club</a></li>
+            <li><a href="#" class="useful-link-a">Ayrıcalıklı Salonlar</a></li>
+            <li><a href="#" class="useful-link-a">Kampanyalar</a></li>
+            <li>
+              <a href="#" class="useful-link-a">Özel Etkinlik Talepleri</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-2">
+          <ul class="useful-links">
+            <li><a href="#" class="useful-link-a">E-Bilet</a></li>
+            <li><a href="#" class="useful-link-a">İade İşlemleri</a></li>
+            <li>
+              <a href="#" class="useful-link-a">MoviePass İade İşlemleri</a>
+            </li>
+            <li><a href="#" class="useful-link-a">İnsan Kaynakları</a></li>
+            <li><a href="#" class="useful-link-a">Sıkça Sorulan Sorular</a></li>
+            <li><a href="#" class="useful-link-a">İşlem Rehberi</a></li>
+            <li><a href="#" class="useful-link-a">Hakkımızda</a></li>
+            <li><a href="#" class="useful-link-a">Yorum ve Öneriler</a></li>
+          </ul>
+        </div>
+        <div class="col-3">
+          <ul class="useful-links">
+            <li>
+              <a href="#" class="useful-link-a">KVK Aydınlatma Bildirimi</a>
+            </li>
+            <li>
+              <a href="#" class="useful-link-a">Kamera Sistemleri Bildirimi</a>
+            </li>
+            <li>
+              <a href="#" class="useful-link-a" target="_blank"
+                >KVKK Basvuru Formu</a
+              >
+            </li>
+            <li>
+              <a href="#" class="useful-link-a">KVK Politikasi</a>
+            </li>
+            <li><a href="#" class="useful-link-a">İletişim</a></li>
+          </ul>
+        </div>
+        <div class="col-4 text-end">
+          <a href="#" class="useful-link-a">Gizlilik</a>
+          <a href="#" class="useful-link-a">Kullanım Koşulları</a>
+          <br />
+          <a href="#" class="useful-link-a">Mesafeli Bilet Satış Sözleşmesi</a>
+          <div class="copyright">
+            Reklam vermek için:
+            <a
+              href="http://www.marsmedia.com.tr"
+              class="useful-link-a"
+              target="_blank"
+              >www.marsmedia.com.tr</a
+            ><br />
+            © Copyright <span id="copyright-date"></span>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
     <script>
       const activateTab = (e) => {
@@ -378,6 +456,10 @@
           }
         });
       };
+
+      const dateSelector = new Date();
+      document.getElementById("copyright-date").innerHTML =
+        dateSelector.getFullYear();
     </script>
   </body>
 </html>
