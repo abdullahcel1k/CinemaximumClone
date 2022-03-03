@@ -113,6 +113,11 @@
   cursor: pointer;
 }
 
+.movie-img {
+  height: 350px;
+  max-height: 350px;
+}
+
 .movie-overlay {
   position: absolute;
   margin-left: 5%;
