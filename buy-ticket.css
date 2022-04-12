@@ -1,0 +1,26 @@
+.buy-ticket-background-img {
+  position: absolute;
+  background-image: url("./assets/images/malazgirt-1071.png");
+  width: inherit;
+  height: 85%;
+  z-index: 0;
+  opacity: 0.8;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  backdrop-filter: blur(10px);
+  margin: 0;
+  padding: 0;
+}
+
+.movie-content {
+  height: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(#ed2793, #ed279333);
+}
+
+.buy-ticket-img {
+  position: relative;
+}

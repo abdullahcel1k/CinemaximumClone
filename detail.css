@@ -8,7 +8,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  filter: blur(10px);
+  backdrop-filter: blur(10px);
   margin: 0;
   padding: 0;
 }
@@ -17,13 +17,13 @@
   position: relative;
   background-image: linear-gradient(#ed279377, #ed279333);
   height: 450px;
-  background-repeat: no-repeat;
   background-size: cover;
   margin: 0;
   color: white;
 }
 
 .movie-detail-img {
+  width: auto;
   height: 365px;
   max-height: 365px;
 }

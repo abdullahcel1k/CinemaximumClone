@@ -36,11 +36,9 @@
 .auth-btn {
   border: none;
   border-radius: 8px;
-  margin-right: 1rem;
   box-shadow: 0px 10px 15px #dedede;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: bold;
-  padding: 5px;
 }
 
 .btn-sign-up {

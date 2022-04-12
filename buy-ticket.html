@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/fontawesome/css/all.css" />
     <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./detail.css" />
+    <link rel="stylesheet" href="./buy-ticket.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -103,67 +103,15 @@
         </div>
       </div>
     </nav>
-    <main class="container-fluid p-0">
-      <div class="movie-detail-background"></div>
-      <div class="movie-detail-container p-0">
-        <div class="container">
-          <div class="row">
-            <div class="col-4">
-              <img
-                class="movie-detail-img mt-5"
-                src="./assets/images/malazgirt-1071.png"
-              />
-            </div>
-            <div class="col-8 ps-5">
-              <div class="movie-detail-header">
-                <span
-                  ><i class="fa-solid fa-comment movie-detail-header-icon"></i>
-                  Yorumları Oku</span
-                >
-                <span
-                  ><i class="fa-solid fa-star movie-detail-header-icon"></i>
-                  Puanla</span
-                >
-                <span
-                  ><i class="fa-solid fa-heart movie-detail-header-icon"></i>
-                  İzlemek İstiyorum</span
-                >
-                <span class="share-section">Paylaş</span>
-                <span
-                  ><i
-                    class="fa-brands fa-facebook-square movie-detail-header-icon"
-                  ></i
-                ></span>
-                <span
-                  ><i class="fa-brands fa-twitter movie-detail-header-icon"></i
-                ></span>
-              </div>
-              <div class="movie-detail-info">
-                <h1 class="movie-detail-title">Malazgirt 1071</h1>
-                <span class="movie-detail-rate"
-                  ><i class="fa-solid fa-star me-2"></i>6.4</span
-                >
-              </div>
-              <div class="movie-warnings">
-                <i class="fa-solid fa-circle-minus"></i>
-                <i class="fa-solid fa-bahai"></i>
-              </div>
-              <ul class="movie-credit">
-                <li><strong>Yönetmen :</strong> Kalyoncu, Özgür Bakar</li>
-                <li>
-                  <strong>Oyuncular :</strong> Caner Kurtaran, Vildan Atasever,
-                  Haluk Piyes, Cengiz Coşkun
-                </li>
-                <li><strong>Formatlar :</strong> 2D</li>
-              </ul>
-              <div class="movie-detail-button-group">
-                <button class="movie-detail-button">Bilet Al</button>
-                <button class="movie-detail-button">Fragman</button>
-                <button class="movie-detail-button">Yorum Yap</button>
-              </div>
-            </div>
+    <main class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-sm-6 col-md-4 bg-danger min-vh-100 p-0">
+          <div class="buy-ticket-background-img"></div>
+          <div class="movie-content">
+            <img class="buy-ticket-img" src="./assets/images/malazgirt-1071.png" />
           </div>
         </div>
+        <div class="col-12 col-sm-6 col-md-8 bg-dark min-vh-100"></div>
       </div>
     </main>
     <footer class="footer bg-light pb-5">
@@ -245,10 +193,5 @@
       </div>
     </footer>
     <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
-    <script>
-      const dateSelector = new Date();
-      document.getElementById("copyright-date").innerHTML =
-        dateSelector.getFullYear();
-    </script>
   </body>
 </html>
