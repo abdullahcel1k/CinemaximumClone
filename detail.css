@@ -111,3 +111,64 @@
   background-color: white;
   color: black;
 }
+
+.similar-movie-change {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.img-container:hover {
+  cursor: pointer;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.buy__ticket--section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(13deg, #ec2938 0%, #e6017c 99%);
+  border-radius: 5px;
+  height: 100px;
+}
+
+.buy__ticket--text {
+  color: white;
+}
+
+.comment__list {
+  max-height: 200px;
+  height: 200px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.comment__item{
+  padding-bottom: 5px;
+  border-bottom: 1px solid #dedede;
+}
+
+.comment__item:last-child{
+  border: none;
+}
+
+.comment__form{
+  background-color: #dedede !important;
+}
+
+.movie__comment-input{
+  height: 140px;
+  background: transparent;
+  border: none;
+}
+
+.movie__comment-input:focus-visible{
+  box-shadow: none;
+  background-color: #dedede !important;
+}

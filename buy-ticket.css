@@ -2,7 +2,7 @@
   position: absolute;
   background-image: url("./assets/images/malazgirt-1071.png");
   width: inherit;
-  height: 85%;
+  height: 100%;
   z-index: 0;
   opacity: 0.8;
   background-repeat: no-repeat;
@@ -14,7 +14,7 @@
 }
 
 .movie-content {
-  height: 85%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,4 +23,21 @@
 
 .buy-ticket-img {
   position: relative;
+}
+
+.buy__ticket-header{
+  display: flex;
+  border-bottom: 1px solid black;
+  justify-content: end;  
+  padding: 10px 0;
+}
+
+.return__home-btn {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 1rem;
 }

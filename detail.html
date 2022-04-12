@@ -15,6 +15,10 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light p-0">
@@ -165,6 +169,143 @@
           </div>
         </div>
       </div>
+      <div class="row m-0">
+        <div class="col-3 ps-5 pt-3">
+          <span><strong>Vizyon Tarihi:</strong> 08.04.2022</span><br />
+          <span><strong>Süre:</strong> 122 Dakika</span><br />
+          <span><strong>Tür:</strong> Aksiyon</span>
+        </div>
+        <div class="col-9 ps-3 pt-3">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo
+            labore fugit earum nesciunt veniam. Nihil voluptatem facilis nemo
+            amet pariatur esse impedit? Minus consectetur veritatis cumque
+            blanditiis quaerat eligendi dicta quod molestias nam suscipit labore
+            quisquam, ducimus sapiente iste dolore esse in aliquam eius, eum
+            nisi, doloremque tempora incidunt ex. Excepturi fuga magni debitis
+            rem suscipit placeat, eaque eligendi commodi. Debitis voluptatum ex,
+            earum perspiciatis nam laudantium dicta. Eaque eveniet repellendus
+            velit porro modi architecto, beatae mollitia quo sunt, soluta neque
+            odit molestias eius repudiandae, error nisi repellat reprehenderit
+            molestiae expedita quibusdam provident labore sint? Officia ut
+            laudantium rerum, distinctio illum deserunt placeat sed veniam minus
+            quidem veritatis, temporibus debitis at id atque? Consequuntur sunt
+            pariatur nisi architecto maxime sapiente cupiditate delectus
+            reprehenderit quibusdam odit beatae porro alias fuga, quae
+            consectetur nam iure amet, labore cum fugit iusto qui numquam quam.
+            Omnis, illum. Rem qui ullam corporis harum, quibusdam mollitia?
+          </p>
+        </div>
+      </div>
+      <div class="row m-0">
+        <div class="col-8 offset-2 buy__ticket--section">
+          <span class="me-3">
+            <span class="buy__ticket--text title">Bilet Al</span><br />
+            <span class="buy__ticket--text subtitle">Sinema Seç</span>
+          </span>
+          <select id="cinema-selector">
+            <optgroup label="İstanbul">
+              <option>İstanbul Salon 1</option>
+              <option>İstanbul Salon 2</option>
+              <option>İstanbul Salon 3</option>
+            </optgroup>
+            <optgroup label="Ankara">
+              <option>Ankara Salon 1</option>
+              <option>Ankara Salon 2</option>
+              <option>Ankara Salon 3</option>
+            </optgroup>
+            <optgroup label="Sivas">
+              <option>Sivas Salon 1</option>
+              <option>Sivas Salon 2</option>
+              <option>Sivas Salon 3</option>
+            </optgroup>
+          </select>
+        </div>
+      </div>
+      <div class="row m-0 ">
+        <div class="col-6 p-5">
+          <h3>Yorumlar</h3>
+          <div class="comment__list mt-5">
+            <p class="comment__item">İlk yorum</p>
+            <p class="comment__item">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <p class="comment__item">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa
+              nesciunt laudantium accusantium cupiditate aspernatur repudiandae
+              quis pariatur sit nam accusamus, magnam nemo non quasi aperiam!
+            </p>
+            <p class="comment__item">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut a
+              assumenda voluptas in accusantium natus ex aut, est possimus,
+              illum deserunt repellendus doloremque qui neque mollitia sit
+              porro, tenetur magnam!
+            </p>
+          </div>
+        </div>
+        <div class="col-6 p-5">
+          <h3>Yorum Yaz</h3>
+          <form class="comment__form mt-5">
+            <textarea class="form-control movie__comment-input" placeholder="Yorumunuz"></textarea>
+            <button class="btn btn-dark mt-3 float-end">Gönder</button>
+          </form>
+        </div>
+      </div>
+      <div class="row mx-0">
+        <h3 class="text-center">Vizyondaki Diğer Filmler</h3>
+        <div class="row similar-movies my-3">
+          <div class="col-1 similar-movie-change">
+            <i class="fa-solid fa-arrow-circle-left" onclick="prevSlide()"></i>
+          </div>
+          <div class="col-2 img-container">
+            <a href="./detail.html"
+              ><img
+                class="slide-img"
+                src="./assets/images/kaptan-pengu-ve-arkadaslari-2.png"
+                height="100"
+            /></a>
+          </div>
+          <div class="col-2 img-container">
+            <a href="./detail.html"
+              ><img
+                class="slide-img"
+                src="./assets/images/malazgirt-1071.png"
+                height="100"
+            /></a>
+          </div>
+          <div class="col-2 img-container">
+            <a href="./detail.html"
+              ><img
+                class="slide-img"
+                src="./assets/images/HO00005023_637807832787274625_beni-sevenler-listesi.png"
+                height="100"
+            /></a>
+          </div>
+          <div class="col-2 img-container">
+            <a href="./detail.html"
+              ><img
+                class="slide-img"
+                src="assets/images/dilberay.png"
+                height="100"
+            /></a>
+          </div>
+          <div class="col-2 img-container">
+            <a href="./detail.html"
+              ><img
+                class="slide-img"
+                src="assets/images/run_gercek.jpg"
+                height="100"
+            /></a>
+          </div>
+          <div class="col-1 similar-movie-change">
+            <i class="fa-solid fa-arrow-circle-right" onclick="nextSlide()"></i>
+          </div>
+        </div>
+
+        <div class="text-center mb-3">
+          <button class="btn btn-dark">Tüm Filmler</button>
+        </div>
+      </div>
     </main>
     <footer class="footer bg-light pb-5">
       <div class="social-links">
@@ -249,6 +390,18 @@
       const dateSelector = new Date();
       document.getElementById("copyright-date").innerHTML =
         dateSelector.getFullYear();
+    </script>
+    <script src="./app.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#cinema-selector").select2();
+      });
     </script>
   </body>
 </html>
